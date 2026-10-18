@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions to Food Waste — Student Awareness Project</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-area">
+                <span class="logo-emoji">🍎</span>
+                <div>
+                    <span class="logo-title">Don't Waste Food</span>
+                    <span class="logo-subtitle">Student Awareness Project</span>
+                </div>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">☰ Menu</button>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="causes.html">Causes</a></li>
+                    <li><a href="impact.html">Impact</a></li>
+                    <li><a href="solutions.html" class="active">Solutions</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. Main Content -->
+    <main class="main-wrapper">
+        
+        <section class="page-header">
+            <span class="badge-tag">💡 Action Plan & Practical Tips</span>
+            <h1 class="page-title">Practical Ways to Stop Food Waste 🥦</h1>
+            <p class="page-lead">You don't need fancy equipment to make a difference. Here are simple, real-world habits students and families can practice every week.</p>
+        </section>
+
+        <!-- Interactive Checklist Component -->
+        <section class="checklist-box">
+            <h3 class="checklist-title">📋 My Weekly Food-Saver Checklist</h3>
+            <p style="margin-bottom: 14px; font-size: 0.95rem; color: #4a5568;">
+                Tick off the habits you already practice or pledge to try this week:
+            </p>
+
+            <label class="checklist-item">
+                <input type="checkbox" id="check1">
+                <span class="checklist-text"><strong>Smart Shopping:</strong> I checked my fridge and made a shopping list before heading to the store.</span>
+            </label>
+
+            <label class="checklist-item">
+                <input type="checkbox" id="check2">
+                <span class="checklist-text"><strong>FIFO Method:</strong> I moved older snacks, yogurt, and bread to the front so they get eaten first.</span>
+            </label>
+
+            <label class="checklist-item">
+                <input type="checkbox" id="check3">
+                <span class="checklist-text"><strong>Sensible Portions:</strong> I took a smaller first serving at dinner/buffets and only went back if still hungry.</span>
+            </label>
+
+            <label class="checklist-item">
+                <input type="checkbox" id="check4">
+                <span class="checklist-text"><strong>Leftover Hero:</strong> I repurposed yesterday's leftover rice, bread, or curry instead of throwing it out.</span>
+            </label>
+
+            <label class="checklist-item">
+                <input type="checkbox" id="check5">
+                <span class="checklist-text"><strong>Date Decoder:</strong> I checked whether a package said "Best Before" (quality) instead of panicking.</span>
+            </label>
+
+            <label class="checklist-item">
+                <input type="checkbox" id="check6">
+                <span class="checklist-text"><strong>Compost or Donate:</strong> I composted fruit/veggie peels or saved untouched food for donation.</span>
+            </label>
+
+            <div class="checklist-feedback" id="checklistFeedback">
+                Tick the habits above that you already do or want to try this week!
+            </div>
+        </section>
+
+        <!-- Guide 1: Understanding Expiry Dates -->
+        <section class="info-section">
+            <h2>Understanding Food Dates: Stop Throwing Good Food Away! 🏷️</h2>
+            <p>One of the biggest reasons families toss unopened boxes is confusing "Best Before" with "Use By". Here is how to tell them apart:</p>
+
+            <table class="date-compare-table">
+                <thead>
+                    <tr>
+                        <th style="width: 25%;">Label</th>
+                        <th style="width: 35%;">What It Actually Means</th>
+                        <th style="width: 40%;">What You Should Do</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>"Best Before"</strong><br><small style="color:#52b788;">(Quality)</small></td>
+                        <td>Refers to maximum freshness, crunch, and aroma. The food is usually completely safe to eat after this date!</td>
+                        <td>Don't throw it out! Check with your senses: does it look fine? Smell fine? Taste fine? If yes, it's good to eat. (e.g. crackers, pasta, canned soup).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>"Use By"</strong><br><small style="color:#d9653b;">(Safety)</small></td>
+                        <td>Refers to microbiological food safety. Used on rapidly perishable foods like raw meat, fresh dairy, and fish.</td>
+                        <td>Strictly follow this date! Do not eat meat or fish past its "Use By" date unless you froze it before that date arrived.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>"Display Until / Sell By"</strong><br><small style="color:#5c677d;">(Store Only)</small></td>
+                        <td>An inventory code for supermarket shelf-stockers to know when to rotate items.</td>
+                        <td>Ignore this label completely! It has nothing to do with food safety for customers at home.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Guide 2: 4 Student-Friendly Leftover Recipes -->
+        <section class="info-section">
+            <h2>🍳 Student Kitchen: Turn Leftovers into Gold</h2>
+            <p>Don't toss yesterday's leftovers — turn them into quick, delicious snacks:</p>
+
+            <div class="card-grid">
+
+                <div class="card">
+                    <div class="card-icon">🍚</div>
+                    <h3 class="card-title">Crispy Fried Rice</h3>
+                    <p>
+                        Cold, day-old cooked rice is actually <em>better</em> than fresh rice for frying because it won't get soggy! Sauté diced leftover vegetables, soy sauce, and an egg in a hot pan for 5 minutes.
+                    </p>
+                    <div class="card-footer-tip">Uses: Leftover cooked rice & vegetable odds and ends.</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🍌</div>
+                    <h3 class="card-title">Brown Banana Pancakes</h3>
+                    <p>
+                        When bananas turn brown and speckled, they are at their sweetest! Mash them with a fork, mix with flour or oats and a splash of milk, and fry into golden, naturally sweet pancakes.
+                    </p>
+                    <div class="card-footer-tip">Uses: Overripe spotty bananas.</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🍞</div>
+                    <h3 class="card-title">Crunchy Garlic Croutons</h3>
+                    <p>
+                        Dry or stale bread can be diced into cubes, tossed with a spoonful of olive oil or butter, a pinch of garlic powder and salt, and baked for 8 minutes until golden and crunchy for soup or salad.
+                    </p>
+                    <div class="card-footer-tip">Uses: Hard or stale bread slices.</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🍲</div>
+                    <h3 class="card-title">Veggie Scrap Broth</h3>
+                    <p>
+                        Keep a clean container in your freezer for vegetable cut-offs: carrot peels, celery leaves, onion skins, and mushroom stems. When the container is full, simmer in water for 35 mins for homemade veggie stock!
+                    </p>
+                    <div class="card-footer-tip">Uses: Clean vegetable peels and trims.</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Guide 3: Composting & Donating -->
+        <section class="student-note">
+            <h3>🌱 Composting & Giving Back</h3>
+            <p>
+                <strong>Composting at Home or School:</strong> If food is truly inedible (like fruit skins, tea leaves, or coffee grounds), never send it to the landfill! Composting allows aerobic bacteria to break it down into rich, black organic soil that feeds garden plants without generating methane gas.
+            </p>
+            <p style="margin-top: 10px;">
+                <strong>Donating Untouched Food:</strong> Many local organizations, food banks, and community fridges accept packaged goods or surplus catering food. If your school has an event with leftover packaged food, ask the organizers to connect with a local charity!
+            </p>
+        </section>
+
+        <!-- STUDENT PHOTO PLACEHOLDER 4 -->
+        <!-- 
+            STUDENT NOTE: 
+            Replace this placeholder with an actual photo! For example:
+            <img src="my-leftover-meal.jpg" alt="Leftover Recipe or Compost" style="max-width:100%; border-radius:8px;">
+        -->
+        <div class="photo-placeholder">
+            <span class="camera-icon">📸</span>
+            <div class="placeholder-title">[Photo Spot: A Leftover Meal You Cooked or Your Home Compost Bin]</div>
+            <div class="placeholder-hint">Take a photo of a delicious meal made from leftovers, or a compost bin in your garden or school to insert here!</div>
+        </div>
+
+        <!-- Quiz CTA -->
+        <section class="cta-box">
+            <h2>Think you're a food waste pro now?</h2>
+            <p>Put your knowledge to the test with our 5-question multiple choice quiz!</p>
+            <a href="quiz.html" class="btn">Take the 5-Question Quiz 🎯</a>
+        </section>
+
+    </main>
+
+    <!-- 3. Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-author">
+                    <h4>Food Wastage Awareness Project</h4>
+                    <p>Made by <strong>[Your Name]</strong>, Class <strong>[X]</strong>, <strong>[School/College Name]</strong></p>
+                    <p style="margin-top: 4px; font-size: 0.85rem; color: #718096;">Subject: Environmental Studies (EVS) / Biology Project</p>
+                </div>
+                <div class="footer-sources">
+                    <h5>Official Sources & References:</h5>
+                    <ul>
+                        <li>• USDA: <a href="https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/food-product-dating" target="_blank" rel="noopener">Food Product Dating Guidelines</a></li>
+                        <li>• WRAP UK: <a href="https://lovefoodhatewaste.com/" target="_blank" rel="noopener">Love Food Hate Waste Practical Guide</a></li>
+                        <li>• EPA: <a href="https://www.epa.gov/sustainable-management-food" target="_blank" rel="noopener">Food Recovery Hierarchy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="causes.html">Causes</a>
+                <a href="impact.html">Impact</a>
+                <a href="solutions.html">Solutions</a>
+                <a href="quiz.html">Quiz</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Student Awareness Project. Built with plain HTML, CSS, and Vanilla JavaScript.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

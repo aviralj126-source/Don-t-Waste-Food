@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Saver Quiz — Student Awareness Project</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-area">
+                <span class="logo-emoji">🍎</span>
+                <div>
+                    <span class="logo-title">Don't Waste Food</span>
+                    <span class="logo-subtitle">Student Awareness Project</span>
+                </div>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">☰ Menu</button>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="causes.html">Causes</a></li>
+                    <li><a href="impact.html">Impact</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="quiz.html" class="active">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. Main Content -->
+    <main class="main-wrapper">
+        
+        <section class="page-header">
+            <span class="badge-tag">🎯 Interactive Challenge</span>
+            <h1 class="page-title">The Food Saver Quiz 🧠</h1>
+            <p class="page-lead">Test what you've learned! Answer these 5 multiple-choice questions to see your final score and read the explanations.</p>
+        </section>
+
+        <!-- Student Note -->
+        <section class="student-note">
+            <h3>✏️ How It Works</h3>
+            <p>
+                Pick one answer for each question below, then click <strong>"Submit My Answers"</strong>. Your score will be calculated instantly and correct answers will be highlighted in green with explanations from my research!
+            </p>
+        </section>
+
+        <!-- Quiz Form Component -->
+        <div class="quiz-container">
+            <form id="quizForm" onsubmit="return false;">
+
+                <!-- Question 0 -->
+                <div class="question-block" id="qblock-0">
+                    <h3 class="question-title">1. Approximately how much edible food is wasted globally every year?</h3>
+                    <ul class="quiz-options">
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q0" value="0">
+                                <span>Around 10 million tonnes</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q0" value="1">
+                                <span>Around 1.05 billion tonnes</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q0" value="2">
+                                <span>Around 50 million tonnes</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q0" value="3">
+                                <span>Less than 500,000 tonnes</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="quiz-explanation" id="explanation-0">
+                        💡 <strong>Explanation:</strong> According to the UNEP Food Waste Index Report (2024), about 1.05 billion tonnes of food is wasted annually — nearly 19% of all food available to consumers.
+                    </div>
+                </div>
+
+                <!-- Question 1 -->
+                <div class="question-block" id="qblock-1">
+                    <h3 class="question-title">2. What is the real difference between "Best Before" and "Use By" dates?</h3>
+                    <ul class="quiz-options">
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="0">
+                                <span>"Best Before" is about food safety; "Use By" is about taste</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="1">
+                                <span>"Best Before" is about quality/freshness; "Use By" is about safety</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="2">
+                                <span>Both dates mean the food turns toxic at midnight</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q1" value="3">
+                                <span>There is no difference; manufacturers pick them randomly</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="quiz-explanation" id="explanation-1">
+                        💡 <strong>Explanation:</strong> "Best Before" guarantees peak flavor and quality (safe to eat afterwards). "Use By" is the safety cut-off, especially for meat and dairy.
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question-block" id="qblock-2">
+                    <h3 class="question-title">3. What powerful greenhouse gas is produced when food rots in an airtight landfill?</h3>
+                    <ul class="quiz-options">
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="0">
+                                <span>Oxygen</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="1">
+                                <span>Methane (CH4)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="2">
+                                <span>Helium</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q2" value="3">
+                                <span>Argon</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="quiz-explanation" id="explanation-2">
+                        💡 <strong>Explanation:</strong> Under oxygen-free conditions in landfills, anaerobic bacteria produce Methane (CH4), which is over 25 times more potent than CO2 at trapping atmospheric heat!
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question-block" id="qblock-3">
+                    <h3 class="question-title">4. What does the kitchen storage rule "FIFO" stand for?</h3>
+                    <ul class="quiz-options">
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="0">
+                                <span>Fast In, Fast Out</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="1">
+                                <span>First In, First Out</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="2">
+                                <span>Freeze It, Forget One</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q3" value="3">
+                                <span>Fresh Ingredients For Others</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="quiz-explanation" id="explanation-3">
+                        💡 <strong>Explanation:</strong> "First In, First Out" means placing newly bought groceries behind older ones so the older food gets consumed before spoiling.
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question-block" id="qblock-4">
+                    <h3 class="question-title">5. Where does the largest share of consumer food waste actually happen?</h3>
+                    <ul class="quiz-options">
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q4" value="0">
+                                <span>Household kitchens (at home)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q4" value="1">
+                                <span>School science laboratories</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q4" value="2">
+                                <span>International flights and trains</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="option-label">
+                                <input type="radio" name="q4" value="3">
+                                <span>Convenience store display windows</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="quiz-explanation" id="explanation-4">
+                        💡 <strong>Explanation:</strong> UNEP found that ~60% of all food wasted at consumer level happens in private household kitchens — meaning our daily choices matter the most!
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="quiz-actions">
+                    <button type="button" class="btn" id="submitQuizBtn">Submit My Answers ✅</button>
+                    <button type="button" class="btn btn-secondary btn-small" id="resetQuizBtn">Reset Quiz 🔄</button>
+                </div>
+
+            </form>
+
+            <!-- Score Result Card -->
+            <div class="quiz-score-card" id="quizScoreCard"></div>
+        </div>
+
+        <!-- STUDENT PHOTO PLACEHOLDER 5 -->
+        <!-- 
+            STUDENT NOTE: 
+            Replace this placeholder with an actual photo! For example:
+            <img src="project-presentation.jpg" alt="Student Presentation" style="max-width:100%; border-radius:8px;">
+        -->
+        <div class="photo-placeholder">
+            <span class="camera-icon">📸</span>
+            <div class="placeholder-title">[Photo Spot: You Working on Your Project or Holding a Poster]</div>
+            <div class="placeholder-hint">You can replace this box with a picture of your project display board, or a photo of your class science exhibition!</div>
+        </div>
+
+    </main>
+
+    <!-- 3. Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-author">
+                    <h4>Food Wastage Awareness Project</h4>
+                    <p>Made by <strong>[Your Name]</strong>, Class <strong>[X]</strong>, <strong>[School/College Name]</strong></p>
+                    <p style="margin-top: 4px; font-size: 0.85rem; color: #718096;">Subject: Environmental Studies (EVS) / Biology Project</p>
+                </div>
+                <div class="footer-sources">
+                    <h5>Official Sources & References:</h5>
+                    <ul>
+                        <li>• UNEP: <a href="https://www.unep.org/resources/publication/food-waste-index-report-2024" target="_blank" rel="noopener">Food Waste Index Report (2024)</a></li>
+                        <li>• UN FAO: <a href="https://www.fao.org/food-loss-and-food-waste/en" target="_blank" rel="noopener">Food Loss & Waste Data</a></li>
+                        <li>• USDA: <a href="https://www.fsis.usda.gov/" target="_blank" rel="noopener">Food Product Dating & Safety Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="causes.html">Causes</a>
+                <a href="impact.html">Impact</a>
+                <a href="solutions.html">Solutions</a>
+                <a href="quiz.html">Quiz</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Student Awareness Project. Built with plain HTML, CSS, and Vanilla JavaScript.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

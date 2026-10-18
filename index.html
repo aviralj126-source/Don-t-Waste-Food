@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don't Waste Food! — A Student Project</title>
+    <!-- Google Fonts for friendly, student-friendly headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-area">
+                <span class="logo-emoji">🍎</span>
+                <div>
+                    <span class="logo-title">Don't Waste Food</span>
+                    <span class="logo-subtitle">Student Awareness Project</span>
+                </div>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">☰ Menu</button>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="causes.html">Causes</a></li>
+                    <li><a href="impact.html">Impact</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. Main Content -->
+    <main class="main-wrapper">
+        
+        <!-- Welcome Hero Section -->
+        <section class="page-header">
+            <span class="badge-tag">🌱 School / College Science Project</span>
+            <h1 class="page-title">Think Before You Scrape Your Plate! 🍽️</h1>
+            <p class="page-lead">A student-led project exploring why good food gets thrown away, how it affects our planet, and practical things we can do every day.</p>
+        </section>
+
+        <!-- Student Note: Why I Chose This Topic -->
+        <section class="student-note">
+            <h3>📝 Why I Chose This Project</h3>
+            <p>
+                Hi! I decided to build this website after a school event last month. Walking past the cafeteria trash bins, I saw entire untouched sandwiches, barely eaten apples, and half-full rice bowls being dumped straight into garbage bags. Then last weekend at a cousin's wedding, more than five large catering trays of delicious curry and bread were thrown out at midnight.
+            </p>
+            <p style="margin-top: 10px;">
+                It made me really uncomfortable. In our environmental science classes, we talk so much about saving electricity and plastic pollution, but food waste rarely gets the same attention. So for this project, I researched the real facts and practical solutions. I hope this website gives you a few ideas you can try at home!
+            </p>
+        </section>
+
+        <!-- Big Call to Action -->
+        <section class="cta-box">
+            <h2>Ready to see how much you know?</h2>
+            <p>Take my quick 5-question multiple choice quiz to test your food waste awareness!</p>
+            <a href="quiz.html" class="btn">Take the Food Saver Quiz 🎯</a>
+            <span style="display: block; margin: 10px 0; font-size: 0.9rem; color: var(--text-muted);">or</span>
+            <a href="causes.html" class="btn btn-secondary btn-small">Learn What Causes Food Waste 👉</a>
+        </section>
+
+        <!-- "Did You Know?" Interactive Fact Box -->
+        <section class="fact-box">
+            <span class="fact-badge">💡 DID YOU KNOW?</span>
+            <p class="fact-text" id="factDisplay">
+                Around 1.05 billion tonnes of edible food is wasted globally every year — that is about 19% of all food available to consumers! (UNEP 2024)
+            </p>
+            <button class="btn btn-secondary btn-small" id="newFactBtn">Show another fact 🔄</button>
+        </section>
+
+        <!-- STUDENT PHOTO PLACEHOLDER 1 -->
+        <!-- 
+            STUDENT NOTE: 
+            Replace this placeholder with an actual photo! For example:
+            <img src="my-cafeteria.jpg" alt="School Cafeteria Food Waste" style="max-width:100%; border-radius:8px;">
+        -->
+        <div class="photo-placeholder">
+            <span class="camera-icon">📸</span>
+            <div class="placeholder-title">[Photo Spot: Your School Cafeteria or Kitchen Plate]</div>
+            <div class="placeholder-hint">Take a photo of leftover food on a plate or your school cafeteria bins to place here.</div>
+        </div>
+
+        <!-- 3 Quick Pillars of This Project -->
+        <section class="info-section">
+            <h2>What This Website Covers 🔍</h2>
+            <div class="card-grid">
+                
+                <div class="card">
+                    <div class="card-icon">🛒</div>
+                    <h3 class="card-title">1. Why It Happens</h3>
+                    <p>From buying too much at the supermarket to confusion over "best before" dates, explore the common traps we fall into.</p>
+                    <a href="causes.html" class="btn btn-secondary btn-small" style="margin-top:auto;">Read Causes →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🌍</div>
+                    <h3 class="card-title">2. The Real Impact</h3>
+                    <p>Verified statistics from the UN, FAO, and UNEP on how food waste fuels global greenhouse emissions and worsens hunger.</p>
+                    <a href="impact.html" class="btn btn-secondary btn-small" style="margin-top:auto;">See Statistics →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">💡</div>
+                    <h3 class="card-title">3. Everyday Fixes</h3>
+                    <p>Simple recipes for leftovers, understanding fridge organization (FIFO), and an interactive checklist for your home.</p>
+                    <a href="solutions.html" class="btn btn-secondary btn-small" style="margin-top:auto;">Explore Solutions →</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- "My Pledge" Interactive Section -->
+        <section class="pledge-section">
+            <h2>Take the "No-Waste" Student Pledge ✋</h2>
+            <p>Commit to taking only what you can eat and saving leftovers this week!</p>
+            <form class="pledge-form" id="pledgeForm">
+                <input 
+                    type="text" 
+                    id="pledgeNameInput" 
+                    class="pledge-input" 
+                    placeholder="Type your name or nickname..."
+                    aria-label="Your Name for the Food Waste Pledge"
+                >
+                <button type="submit" class="btn">I Pledge to Waste Less Food! ✨</button>
+            </form>
+            <div class="pledge-result" id="pledgeResult"></div>
+        </section>
+
+    </main>
+
+    <!-- 3. Site Footer (Included on every page) -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-author">
+                    <h4>Food Wastage Awareness Project</h4>
+                    <p>Made by <strong>[Your Name]</strong>, Class <strong>[X]</strong>, <strong>[School/College Name]</strong></p>
+                    <p style="margin-top: 4px; font-size: 0.85rem; color: #718096;">Subject: Environmental Studies (EVS) / Biology Project</p>
+                </div>
+                <div class="footer-sources">
+                    <h5>Official Sources & References:</h5>
+                    <ul>
+                        <li>• UNEP: <a href="https://www.unep.org/resources/publication/food-waste-index-report-2024" target="_blank" rel="noopener">Food Waste Index Report (2024)</a></li>
+                        <li>• UN FAO: <a href="https://www.fao.org/food-loss-and-food-waste/en" target="_blank" rel="noopener">Food Loss & Waste Database</a></li>
+                        <li>• UN World Food Programme (WFP): <a href="https://www.wfp.org/global-hunger-crisis" target="_blank" rel="noopener">Global Hunger Crisis</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="causes.html">Causes</a>
+                <a href="impact.html">Impact</a>
+                <a href="solutions.html">Solutions</a>
+                <a href="quiz.html">Quiz</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Student Awareness Project. Built with plain HTML, CSS, and Vanilla JavaScript.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
